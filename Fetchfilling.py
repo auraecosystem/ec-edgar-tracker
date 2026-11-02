@@ -10,6 +10,11 @@ headers = {
     'Accept-Encoding': 'gzip, deflate'
 }
 
+headers = {
+    'User-Agent': 'YourName/YourCompany ContactEmail@example.com',
+    'Accept-Encoding': 'gzip, deflate'
+}
+
 def download_filing(url):
     print(f"Requesting data from SEC...")
     response = requests.get(url, headers=headers)
